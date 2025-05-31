@@ -1,0 +1,8 @@
+logs/
+*.out
+*.err
+pending_files.txt
+failed_files.txt
+__pycache__/
+.env
+*.pyc
