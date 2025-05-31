@@ -29,13 +29,16 @@ HPC-OCR-Pipeline/
 │
 ├── README.md
 ├── LICENSE
-├── environment.yml  # For conda environment setup
-├── master_controller.sh
-├── slurm_array_job.sh
-├── ocr_array_worker.py
-├── monitor_progress.sh
+├── environment.yml        # Conda environment definition
+├── master_controller.sh   # The main orchestration script
+├── slurm_array_job.sh     # SLURM job submission script
+├── ocr_array_worker.py    # The worker that processes each file batch
+├── monitor_progress.sh    # (Optional) Script to monitor live progress
+│
 ├── utils/
-│   └── (any helper scripts)
-├── logs/ (ignored in git)
+│   └── (any helper scripts you may add later)
+│
+├── logs/                  # Logs folder (ignored in git)
 │
 └── .gitignore
+
