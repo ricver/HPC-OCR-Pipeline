@@ -1,0 +1,11 @@
+name: ocr_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - ocrmypdf
+  - tesseract
+  - ghostscript
+  - pip
+  - pip:
+      - (any extra python packages)
