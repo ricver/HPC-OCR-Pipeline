@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - python=3.10
-  - ocrmypdf
+  - ocrmypdf=14.0.0
   - tesseract
   - ghostscript
   - pip
