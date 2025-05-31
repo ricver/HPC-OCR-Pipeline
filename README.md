@@ -23,7 +23,13 @@ Distributed OCR Pipeline using OCRmyPDF + SLURM job arrays for scalable PDF OCR 
 - conda env create -f environment.yml
 - conda activate ocr_env
 - bash master_controller.sh
+- Check completed PDF files
+  - find /scratch/*/ -iname '*.pdf' | wc -l
+- Monitor progress
+  - shmonitor.sh
+  - squeue -u $USER
 
+  
 ## Folder Structure:
 ```bash
 HPC-OCR-Pipeline/
