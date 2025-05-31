@@ -51,16 +51,20 @@ HPC-OCR-Pipeline/
 
 ```
 
-# Activate conda env first:
+## Activate conda env first:
 conda env create -f environment.yml
 conda activate ocr_env
 
-# Run controller
+## Run controller
 bash master_controller.sh
 
-# Then submit smaller batch manually (example: batches 1 to 25)
+## Then submit smaller batch manually (example: batches 1 to 25)
 sbatch --array=1-25 slurm_array_job.sh
 
-# If QOS limits allow, you can submit additional chunks as needed:
+## If QOS limits allow, you can submit additional chunks as needed:
 sbatch --array=26-50 slurm_array_job.sh
 sbatch --array=51-75 slurm_array_job.sh
+
+## Citation
+If you use this pipeline in academic research, please cite or acknowledge:
+Ricver (2024). HPC-OCR-Pipeline: Distributed OCR processing on SLURM clusters. GitHub repository: https://github.com/ricver/HPC-OCR-Pipeline
