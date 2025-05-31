@@ -49,4 +49,18 @@ HPC-OCR-Pipeline/
 │
 └── .gitignore
 
+```
 
+# Activate conda env first:
+conda env create -f environment.yml
+conda activate ocr_env
+
+# Run controller
+bash master_controller.sh
+
+# Then submit smaller batch manually (example: batches 1 to 25)
+sbatch --array=1-25 slurm_array_job.sh
+
+# If QOS limits allow, you can submit additional chunks as needed:
+sbatch --array=26-50 slurm_array_job.sh
+sbatch --array=51-75 slurm_array_job.sh
