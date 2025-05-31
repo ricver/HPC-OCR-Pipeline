@@ -24,10 +24,11 @@ Distributed OCR Pipeline using OCRmyPDF + SLURM job arrays for scalable PDF OCR 
 - conda activate ocr_env
 - bash master_controller.sh
 
-Folder structure:
-HPC-OCR-Pipeline/```
-│```
-├── README.md```
+## Folder Structure:
+```bash
+HPC-OCR-Pipeline/
+│
+├── README.md
 ├── LICENSE
 ├── environment.yml        # Conda environment definition
 ├── master_controller.sh   # The main orchestration script
